@@ -10,7 +10,7 @@ script:
 notifications:
   webhooks:
     urls:
-      - "$DOCKER_HUB_BUILD_TRIGGER_URL"
+      - "https://cloud.docker.com/api/build/v1/source/4e5ec223-7684-42f3-b85d-6a034d191dae/trigger/bca552db-3f65-41f9-9ce9-481b1fc25bdc/call/"
     on_success: always # default: always
     on_failure: never # default: always
     on_start:   never # default: never
