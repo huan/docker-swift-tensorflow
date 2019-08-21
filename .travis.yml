@@ -3,10 +3,6 @@ language: bash
 script:
   - echo TEST PASS
 
-notifications:
-  webhooks:
-    urls:
-      - https://cloud.docker.com/api/build/v1/source/4e5ec223-7684-42f3-b85d-6a034d191dae/trigger/bca552db-3f65-41f9-9ce9-481b1fc25bdc/call/
-    on_success: always  # options: [always|never|change] default: always
-    on_failure: never
-    on_start: never
+deploy:
+  provider: script
+  script: curl -X POST -d '{"from":"travis"}' "$DOCKER_HUB_BUILD_TRIGGER_URL"
