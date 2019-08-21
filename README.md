@@ -17,6 +17,8 @@ docker run -ti --rm \
   zixia/swift
 ```
 
+> `--privileged` and `--userns=host` might be required for some docker deamon configuration.
+
 See: <https://github.com/hashicorp/nomad/issues/1904#issuecomment-523295864>
 
 ## AUTHOR
