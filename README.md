@@ -56,7 +56,7 @@ docker run --cap-add SYS_PTRACE zixia/swift python3 /swift-jupyter/test/all_test
 
 ### v0.1 (22 Aug 2019)
 
-Init version, working under Ubuntu 19.04
+Init version based on [Swift-Jupyter](https://github.com/google/swift-jupyter), working under Ubuntu 19.04 without any problem.
 
 ## Author
 
