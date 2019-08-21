@@ -58,6 +58,12 @@ docker run --cap-add SYS_PTRACE zixia/swift python3 /swift-jupyter/test/all_test
 
 Init version based on [Swift-Jupyter](https://github.com/google/swift-jupyter), working under Ubuntu 19.04 without any problem.
 
+## Resources
+
+- [Swift-Jupyter](https://github.com/google/swift-jupyter)
+- [Dockerized Swift for TensorFlow and advanced usage examples.](https://github.com/zachgrayio/swift-tensorflow)
+- [Swift for tensorflow using GPU with nvidia docker](https://forums.fast.ai/t/swift-for-tensorflow-using-gpu-with-nvidia-docker/44730)
+
 ## Author
 
 [@huan](https://github.com/huan) [Huan LI](https://linkedin.com/in/zixia) (李卓桓) \<zixia@zixia.net\>
