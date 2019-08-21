@@ -3,6 +3,16 @@ language: bash
 script:
   - echo TEST PASS
 
-deploy:
-  provider: script
-  script: curl -X POST -d '{"from":"travis"}' "$DOCKER_HUB_BUILD_TRIGGER_URL"
+# deploy:
+#   provider: script
+#   script: curl -X POST -d '{"from":"travis"}' "$DOCKER_HUB_BUILD_TRIGGER_URL"
+
+notifications:
+  webhooks:
+    urls:
+      - "$DOCKER_HUB_BUILD_TRIGGER_URL"
+    on_success: always # default: always
+    on_failure: never # default: always
+    on_start:   never # default: never
+    on_cancel:  never # default: always
+    on_error:   never # default: always
