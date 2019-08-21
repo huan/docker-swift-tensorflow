@@ -22,14 +22,12 @@ nvidia-docker run -ti --rm \
   zixia/swift
 ```
 
-> `--privileged` and `--userns=host` might be required for some docker deamon configuration.
-
-See: <https://github.com/hashicorp/nomad/issues/1904#issuecomment-523295864>
+> `--privileged` and `--userns=host` might be required for some docker deamon configuration. (see [this issue](https://github.com/hashicorp/nomad/issues/1904#issuecomment-523295864))
 
 ### Jupyter
 
 ```bash
-nvidia-docker run -ti \
+nvidia-docker run -ti --rm \
   -p 8888:8888 \
   --cap-add SYS_PTRACE \
   -v "$(pwd)":/notebooks \
@@ -49,7 +47,10 @@ The functions of these parameters are:
 After building the docker image according to the instructions above,
 
 ```sh
-docker run --cap-add SYS_PTRACE zixia/swift python3 /swift-jupyter/test/all_test_docker.py
+docker run --rm \
+  --cap-add SYS_PTRACE \
+  zixia/swift \
+  python3 /swift-jupyter/test/all_test_docker.py
 ```
 
 ## History
