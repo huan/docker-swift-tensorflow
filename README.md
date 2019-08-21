@@ -1,5 +1,8 @@
 # swift
 
+[![Build Status](https://travis-ci.com/huan/swift.svg?branch=master)](https://travis-ci.com/huan/swift)
+[![Docker Pulls](https://img.shields.io/docker/pulls/zixia/swift.svg?maxAge=2592000)](https://hub.docker.com/r/zixia/swift/)
+
 Tensorflow Swift Docker Image
 
 ## Docker
