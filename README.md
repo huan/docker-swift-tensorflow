@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.com/huan/swift.svg?branch=master)](https://travis-ci.com/huan/swift)
 [![Docker Pulls](https://img.shields.io/docker/pulls/zixia/swift.svg?maxAge=2592000)](https://hub.docker.com/r/zixia/swift/)
 
+[![dockeri.co](https://dockeri.co/image/zixia/swift)](https://hub.docker.com/r/zixia/swift/)
+
 Tensorflow Swift Docker Image based on [Swift-Jupyter](https://github.com/google/swift-jupyter).
 
 ## Usage
@@ -10,7 +12,7 @@ Tensorflow Swift Docker Image based on [Swift-Jupyter](https://github.com/google
 ### CLI
 
 ```sh
-docker run -ti --rm \
+nvidia-docker run -ti --rm \
   --privileged \
   --userns=host \
   \
@@ -26,7 +28,7 @@ See: <https://github.com/hashicorp/nomad/issues/1904#issuecomment-523295864>
 ### Jupyter
 
 ```bash
-docker run -ti \
+nvidia-docker run -ti \
   -p 8888:8888 \
   --cap-add SYS_PTRACE \
   -v /tmp:/notebooks \
