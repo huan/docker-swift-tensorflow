@@ -32,7 +32,7 @@ See: <https://github.com/hashicorp/nomad/issues/1904#issuecomment-523295864>
 nvidia-docker run -ti \
   -p 8888:8888 \
   --cap-add SYS_PTRACE \
-  -v /tmp:/notebooks \
+  -v "$(pwd)":/notebooks \
   zixia/swift
 ```
 
