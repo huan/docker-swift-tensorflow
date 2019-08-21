@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.com/huan/swift.svg?branch=master)](https://travis-ci.com/huan/swift)
 [![Docker Pulls](https://img.shields.io/docker/pulls/zixia/swift.svg?maxAge=2592000)](https://hub.docker.com/r/zixia/swift/)
+[![Docker Layers](https://images.microbadger.com/badges/image/zixia/swift.svg)](https://microbadger.com/#/images/zixia/swift)
 
 [![dockeri.co](https://dockeri.co/image/zixia/swift)](https://hub.docker.com/r/zixia/swift/)
 
