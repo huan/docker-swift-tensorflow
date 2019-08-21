@@ -1,0 +1,3 @@
+[submodule "swift-jupyter"]
+	path = swift-jupyter
+	url = git@github.com:google/swift-jupyter.git
