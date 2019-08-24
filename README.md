@@ -6,7 +6,7 @@
 
 [![dockeri.co](https://dockeri.co/image/zixia/swift)](https://hub.docker.com/r/zixia/swift/)
 
-Tensorflow Swift Docker Image based on [Swift-Jupyter](https://github.com/google/swift-jupyter).
+Dockerized Swift for TensorFlow with Jupyter and GPU Support.
 
 ## Usage
 
