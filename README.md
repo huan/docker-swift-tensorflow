@@ -40,6 +40,21 @@ The functions of these parameters are:
 - `--cap-add SYS_PTRACE` adjusts the privileges with which this container is run, which is required for the Swift REPL.
 - `-v <host path>:/notebooks` bind mounts a host directory as a volume where notebooks created in the container will be stored.  If this command is omitted, any notebooks created using the container will not be persisted when the container is stopped.
 
+### Run a Swift File
+
+To run a local file `main.swift` form the current path:
+
+```bash
+nvidia-docker run -ti --rm \
+  --privileged \
+  --userns=host \
+  \
+  -v "$(pwd)":/notebooks \
+  --entrypoint /bin/bash \
+  zixia/swift \
+  swift ./main.swift
+```
+
 ## Develop
 
 ### Testing
