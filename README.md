@@ -50,7 +50,6 @@ nvidia-docker run -ti --rm \
   --userns=host \
   \
   -v "$(pwd)":/notebooks \
-  --entrypoint /bin/bash \
   zixia/swift \
   swift ./main.swift
 ```
